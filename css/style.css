@@ -1,19 +1,5 @@
-[data-theme="default"] {
-  --bs-body-bg: #ffffff;
-  --bs-body-color: #111827;
-  --bs-primary: #3b82f6;
-  --bs-primary-hover: #2563eb;
-  --bs-border-color: #e5e7eb;
-}
 
 
-[data-theme="dark"] {
-  --bs-body-bg: #1a1a1a;
-  --bs-body-color: #f5f5f5;
-  --bs-primary: #0ea5e9;
-  --bs-primary-hover: #0284c7;
-  --bs-border-color: #333333;
-}
 
 [data-theme="sand"] {
   --bs-body-bg: #fce8c3;
@@ -31,3 +17,35 @@
   --bs-border-color: #dcd6c1;      
   --bs-accent-gold: #d4af37;       
 }
+
+.mt-100 {
+  margin-top: 100vh; /* 100% van het scherm */
+}
+
+.hover-switch {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-switch img {
+  display: block;
+  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.hover-switch .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.hover-switch:hover .main-img {
+  opacity: 0;
+}
+
+.hover-switch:hover .hover-img {
+  opacity: 1;
+}
+
