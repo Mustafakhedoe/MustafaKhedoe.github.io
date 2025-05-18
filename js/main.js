@@ -1,12 +1,13 @@
 
-  const themes = ["theme1", "theme2", "theme3", "theme4"];
-  let currentTheme = 0;
-
-  function switchTheme() {
-    currentTheme = (currentTheme + 1) % themes.length;
-    document.documentElement.setAttribute("data-theme", themes[currentTheme]);
-  }
-
-  document.getElementById("themeSwitchBtn").addEventListener("click", switchTheme);
-  document.getElementById("themeSwitchBtnMobile").addEventListener("click", switchTheme);
- 
+// Loading screen //
+  document.addEventListener("DOMContentLoaded", () => {
+    const loader = document.getElementById("loader-screen");
+    const main = document.getElementById("main-content");
+    const logo = document.getElementById("loader-logo");
+  
+    logo.addEventListener("click", () => {
+      loader.style.display = "none";
+      main.style.display = "block";
+    });
+  });
+  // Loading screen //

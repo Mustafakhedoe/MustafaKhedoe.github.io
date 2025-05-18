@@ -1,6 +1,5 @@
 
-
-
+/* Theme Switch colors */
 [data-theme="sand"] {
   --bs-body-bg: #fce8c3;
   --bs-body-color: #5e4635;
@@ -18,10 +17,18 @@
   --bs-accent-gold: #d4af37;       
 }
 
-.mt-100 {
-  margin-top: 100vh; /* 100% van het scherm */
+[data-theme="onepiece"] {
+  --bs-body-bg: #fff4e6;
+  --bs-body-color: #0f172a;
+  --bs-primary: #ff3c00;
+  --bs-primary-hover: #c22e00;
+  --bs-border-color: #facc15;
+  --bs-accent-gold: #fcd34d;
 }
+/* Theme Switch colors */
 
+
+/* Foto hover */
 .hover-switch {
   position: relative;
   overflow: hidden;
@@ -48,4 +55,36 @@
 .hover-switch:hover .hover-img {
   opacity: 1;
 }
+/* Foto hover */
 
+
+/* Loading Screen */
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#loader-screen {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader-logo {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #3b82f6;
+  cursor: pointer;
+  user-select: none;
+}
+
+#main-content {
+  display: none;
+}
+
+/* Loading Screen */
