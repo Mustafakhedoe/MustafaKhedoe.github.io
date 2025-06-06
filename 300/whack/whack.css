@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(96, 10, 117), rgb(25, 9, 70), rgb(25, 9, 70), rgb(128, 18, 143), rgb(96, 10, 117));
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .hole {
+    width: 100px;
+    height: 100px;
+    background-color: #811e60;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .hole:hover {
+    background-color: #615951;
+  }
+  
+  .mole {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.2s ease-in-out;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+.goback {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    border: 3px solid black;
+    background-color: grey;
+
+}
+
+.goback {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 30px;
+  border: 3px solid black;
+  background-color: grey;
+  color: aliceblue;
+  width: 50px;
+  text-decoration: none;
+
+}
