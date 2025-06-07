@@ -1,32 +1,214 @@
 
 /* Theme Switch colors */
+:root {
+  --bs-primary: #007bff;
+  --bs-primary-hover: #0056b3;
+  --bs-body-bg: #000000;
+  --bs-body-color: #ffffff;
+  --bs-border-color: #007bff;
+  --bs-link-color: #007bff;
+
+  --main-title-color: #007bff;
+  --section-title-color: #007bff;
+  --name-highlight-color: #007bff;
+  --skills-badge-color: #007bff;
+  --skills-title-color: #007bff;
+  --project-title-color: #007bff;
+  --game-title-color: #007bff;
+  --form-border-color: #007bff;
+  --icon-color: #007bff;
+  --border-radius: 20px;
+}
+
 [data-theme="sand"] {
-  --bs-body-bg: #fce8c3;
-  --bs-body-color: #5e4635;
   --bs-primary: #d97706;
   --bs-primary-hover: #b45309;
+  --bs-body-bg: #fce8c3;
+  --bs-body-color: #5e4635;
   --bs-border-color: #e2c799;
+  --bs-link-color: #d97706;
+
+  --main-title-color: #d97706;
+  --section-title-color: #b45309;
+  --name-highlight-color: #e0a72c;
+  --skills-badge-color: #e0a72c;
+  --skills-title-color: #b45309;
+  --project-title-color: #f59e0b;
+  --game-title-color: #f59e0b;
+  --form-border-color: #d97706;
+  --icon-color: #d97706;
+  --border-radius: 20px;
 }
 
 [data-theme="zelda"] {
-  --bs-body-bg: #f4f1e1;          
-  --bs-body-color: #1b3a1b;        
-  --bs-primary: #3f8c3f;         
-  --bs-primary-hover: #2e6e2e;     
-  --bs-border-color: #dcd6c1;      
-  --bs-accent-gold: #d4af37;       
+  --bs-primary: #3f8c3f;
+  --bs-primary-hover: #2e6e2e;
+  --bs-body-bg: #f4f1e1;
+  --bs-body-color: #1b3a1b;
+  --bs-border-color: #dcd6c1;
+  --bs-link-color: #3f8c3f;
+
+  --main-title-color: #3f8c3f;
+  --section-title-color: #2e6e2e;
+  --name-highlight-color: #61a861;
+  --skills-badge-color: #61a861;
+  --skills-title-color: #2e6e2e;
+  --project-title-color: #3f8c3f;
+  --game-title-color: #3f8c3f;
+  --form-border-color: #3f8c3f;
+  --icon-color: #3f8c3f;
+  --border-radius: 20px;
 }
 
 [data-theme="onepiece"] {
-  --bs-body-bg: #fff4e6;
-  --bs-body-color: #0f172a;
   --bs-primary: #ff3c00;
   --bs-primary-hover: #c22e00;
+  --bs-body-bg: #fff4e6;
+  --bs-body-color: #0f172a;
   --bs-border-color: #facc15;
-  --bs-accent-gold: #fcd34d;
+  --bs-link-color: #ff3c00;
+
+  --main-title-color: #ff3c00;
+  --section-title-color: #c22e00;
+  --name-highlight-color: #facc15;
+  --skills-badge-color: #facc15;
+  --skills-title-color: #c22e00;
+  --project-title-color: #ff3c00;
+  --game-title-color: #ff3c00;
+  --form-border-color: #ff3c00;
+  --icon-color: #ff3c00;
+  --border-radius: 20px;
 }
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  border: 5px solid var(--bs-border-color);
+  border-radius: var(--border-radius);
+  transition: all 0.4s;
+}
+
+.navbar, .offcanvas {
+  background-color: #000000 !important;
+}
+
+.navbar-brand, .nav-link, .dropdown-menu, .offcanvas-title {
+  color: var(--bs-body-color) !important;
+  transition: color 0.4s;
+}
+
+.main-title {
+  color: var(--main-title-color);
+  transition: color 0.4s;
+}
+
+.section-title {
+  color: var(--section-title-color);
+  transition: color 0.4s;
+}
+
+.about-subtitle {
+  color: var(--bs-body-color);
+  transition: color 0.4s;
+}
+
+.highlight-name {
+  color: var(--name-highlight-color);
+  transition: color 0.4s;
+}
+
+.skills-title {
+  color: var(--skills-title-color);
+  transition: color 0.4s;
+}
+
+.badge {
+  background-color: var(--skills-badge-color);
+  transition: background-color 0.4s;
+}
+
+.projects-title {
+  color: var(--project-title-color);
+  transition: color 0.4s;
+}
+
+.game-title {
+  color: var(--game-title-color);
+  transition: color 0.4s;
+}
+
+a.text-primary {
+  color: var(--section-title-color) !important;
+  transition: color 0.4s;
+}
+
+.social-sidebar .bi {
+  color: var(--icon-color);
+  transition: color 0.4s;
+}
+
+.project-grid {
+  border: 2px solid var(--bs-border-color);
+  border-radius: var(--border-radius);
+  transition: border-color 0.4s;
+}
+
+.form-control.input-border {
+  border-color: var(--form-border-color);
+  transition: border-color 0.4s;
+}
+
+hr {
+  border-color: var(--bs-border-color);
+  transition: border-color 0.4s;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+}
+
+.btn-outline-primary {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+  transition: all 0.4s;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--bs-primary-hover);
+  border-color: var(--bs-primary-hover);
+  color: #fff;
+}
+
+
+
+
 /* Theme Switch colors */
 
+/* Overgang Theme Switch */
+:root {
+  --transition-speed: 0.4s;
+}
+
+/* Smooth overgang bij wisselen van theme */
+body {
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.navbar,
+.offcanvas,
+.card,
+.dropdown-menu {
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+/* Overgang Theme Switch */
 
 /* Foto hover */
 .hover-switch {
