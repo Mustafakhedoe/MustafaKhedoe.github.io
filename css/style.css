@@ -90,7 +90,6 @@ body {
 /* Loading Screen */
 
 /* Social media sticky sidebar */
-/* Social sidebar styles */
 .social-sidebar {
   position: fixed;
   top: 50%;
@@ -114,7 +113,7 @@ body {
   color: #0056b3;
 }
 
-/* Verberg icons op mobiel */
+/* Verbert de sociale medias voor de mobiel */
 @media (max-width: 768px) {
   .social-sidebar {
     display: none;
@@ -133,3 +132,29 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;  /* Safari en Chrome */
 }
+/* Scrollbar verbergen voor alle browsers */
+
+/* Full border around the website */
+body {
+  margin: 0;
+  border: 5px solid #0d6efd;
+  border-radius: 25px;
+  padding: 40px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Border uitschakelen op mobiel */
+@media (max-width: 768px) {
+  body {
+    border: none;
+    border-radius: 0;
+    padding: 20px; /* optioneel: iets kleinere padding op mobiel */
+  }
+}
+
+
+
+
+
