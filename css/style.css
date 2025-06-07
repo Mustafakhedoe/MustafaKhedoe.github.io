@@ -90,23 +90,9 @@ body {
 /* Loading Screen */
 
 /* Social media sticky sidebar */
-Social sidebar styles
-.social-sidebar {
-  z-index: 999;
-}
-
-.social-sidebar a {
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.social-sidebar a:hover {
-  transform: scale(1.2);
-}
-
-.social-sidebar {
+.social-icons {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 20px;
   transform: translateY(-50%);
   display: flex;
@@ -115,30 +101,56 @@ Social sidebar styles
   z-index: 1000;
 }
 
-/* Icons wat groter en gecentreerd */
-.social-sidebar a {
+.social-icons a {
+  color: #007bff; 
   font-size: 24px;
-  color: var(--bs-primary);
-  transition: transform 0.3s;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-sidebar a:hover {
+.social-icons a:hover {
   transform: scale(1.2);
+  color: #0056b3;
 }
 
-/* Responsive aanpassing voor mobiel */
+/* Verberg icons op mobiele schermen */
 @media (max-width: 768px) {
-  .social-sidebar {
-    top: auto;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 30px;
-    gap: 30px;
+  .social-icons {
+    display: none;
   }
+}
+
+.social-icons {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.social-icons a {
+  color: #007bff; 
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+}
+
+/* Verberg icons zodra scherm smaller wordt */
+@media (max-width: 768px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+/* Extra veiligheid: verberg wanneer overlapt */
+#about-me .social-icons {
+  display: none;
 }
 
 /* Scrollbar verbergen voor alle browsers */
