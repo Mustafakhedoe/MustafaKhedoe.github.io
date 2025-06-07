@@ -88,3 +88,27 @@ body {
 }
 
 /* Loading Screen */
+
+Social sidebar styles
+.social-sidebar {
+  z-index: 999;
+}
+
+.social-sidebar a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-sidebar a:hover {
+  transform: scale(1.2);
+}
+
+/* Scrollbar verbergen */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE en Edge */
+  scrollbar-width: none;     /* Firefox */
+}
