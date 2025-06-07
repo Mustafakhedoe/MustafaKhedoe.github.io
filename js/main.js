@@ -13,12 +13,6 @@
   // Loading screen //
 
 
-  document.querySelectorAll('[data-theme]').forEach(item => {
-    item.addEventListener('click', function(e) {
-      e.preventDefault();
-      const theme = this.getAttribute('data-theme');
-      document.documentElement.setAttribute('data-theme', theme);
-    });
-  });
+  
   
   
