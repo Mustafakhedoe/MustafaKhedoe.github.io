@@ -103,12 +103,14 @@ Social sidebar styles
   transform: scale(1.2);
 }
 
-/* Scrollbar verbergen */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-body {
+/* Scrollbar verbergen voor alle browsers */
+html, body {
+  overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;  /* IE en Edge */
   scrollbar-width: none;     /* Firefox */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none;  /* Safari en Chrome */
 }
