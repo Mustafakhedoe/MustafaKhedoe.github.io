@@ -57,6 +57,10 @@ body {
   }
 }
 
+/* === navbar button theme switch === */
+
+
+
 /* ==== Tekstkleuren ==== */
 .text-primary {
   color: var(--primary-color) !important;
@@ -82,7 +86,7 @@ body {
 }
 
 /* ==== Buttons ==== */
-.btn-primary {
+.btn-primary, .btn.show, .btn:first-child:active {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: var(--btn-text-color);
@@ -91,9 +95,10 @@ body {
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
-.btn-outline-primary:hover {
+.btn:hover {
   background-color: var(--primary-color);
   color: var(--btn-text-color);
+  border-color: var(--primary-color);
 }
 
 /* === my skills === */
