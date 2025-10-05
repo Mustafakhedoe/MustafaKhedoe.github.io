@@ -36,7 +36,7 @@ I’m constantly improving my coding skills and learning new technologies to pre
 
 ## 📫 Contact
 If you’d like to connect, collaborate, or share feedback — feel free to reach out!  
-📧 **Email:** [your-email-here]  
+📧 **Email:** [mustafa.khedoe7@outlook.com]  
 🌍 **Portfolio:** [https://mustafakhedoe.github.io](https://mustafakhedoe.github.io)
 
 ---
