@@ -13,11 +13,11 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <script defer src="js/main.js"></script>
 </head>
 
-<body class="bg-black text-white">
+<body class="text-white">
 
+  <div id="main-content">
   <!-- Social Media Sticky Sidebar   -->
 <div class="social-sidebar position-fixed top-50 start-0 translate-middle-y ps-3">
   <ul class="list-unstyled mb-0">
@@ -39,72 +39,42 @@
   </ul>
 </div>
 
-  <!-- Loader Screen -->
-  <div id="loader-screen">
-    <h1 id="loader-logo">MK</h1>
-    <button id="start-button" class="btn btn-primary btn-lg">Press to Start</button>
-  </div>
+    <nav class="navbar navbar-dark px-4 navbar-expand-lg">
+      <div class="nav-shell">
+        <a class="navbar-brand text-primary fw-bold fs-4" href="#">Mustafa</a>
 
-
-    <nav class="navbar navbar-dark bg-black px-4 navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand text-primary fw-bold fs-4" href="#">MK</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#about-me">About Me</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+        <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav top-nav">
+            <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a><span class="nav-dot">•</span></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#about-me">About Me</a><span class="nav-dot">•</span></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a><span class="nav-dot">•</span></li>
             <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-            <li class="nav-item dropdown">
-              <button class="btn btn-outline-primary dropdown-toggle ms-3" type="button" id="themeDropdown"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Switch Theme
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="themeDropdown">
-                <li><a class="dropdown-item" href="#" data-theme="classic">Classic</a></li>
-                <li><a class="dropdown-item" href="#" data-theme="dark">Dark</a></li>
-                <li><a class="dropdown-item" href="#" data-theme="zelda">Zelda</a></li>
-                <li><a class="dropdown-item" href="#" data-theme="onepiece">One Piece</a></li>
-              </ul>
-            </li>
           </ul>
         </div>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
 
-    <!-- Offcanvas menu mobiel -->
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title text-primary">MK</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        <h5 class="offcanvas-title text-primary" id="mobileMenuLabel">Mustafa</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <ul class="navbar-nav text-center">
           <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#about-me">About Me</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-          <li class="nav-item dropdown mt-3">
-            <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" id="themeDropdownMobile"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Switch Theme
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="themeDropdownMobile">
-              <li><a class="dropdown-item" href="#" data-theme="classic">Classic</a></li>
-              <li><a class="dropdown-item" href="#" data-theme="dark">Dark</a></li>
-              <li><a class="dropdown-item" href="#" data-theme="zelda">Zelda</a></li>
-              <li><a class="dropdown-item" href="#" data-theme="onepiece">One Piece</a></li>
-            </ul>
-          </li>
         </ul>
       </div>
     </div>
 
    <!-- Welkom Section -->
-<section id="home" class="bg-black text-white d-flex align-items-start py-5" style="height: 100vh;">
+<section id="home" class="text-white d-flex align-items-start py-5" style="height: 100vh;">
   <div class="container mt-5">
     <p class="text-secondary">Hi, welcome to my portfolio!</p>
     <h1 class="text-primary fw-bold">Mustafa Khedoe</h1>
@@ -137,50 +107,111 @@
 
 
     <!-- About Me Section -->
-<section id="about-me" class="bg-black text-white container py-5" style="min-height:92vh;">
+<section id="about-me" class="text-white container py-5" style="min-height:92vh;">
   <div class="row align-items-center">
     <div class="col-lg-6">
-      <h2 class="text-primary fw-bold mb-3"> About Me</h2>
+      <h2 class="text-primary fw-bold mb-3">About Me</h2>
       <p class="text-light">
-        Hi! I'm <span class="text-primary fw-semibold">Mustafa</span>, a passionate first-year Software Development
-        student at ROC Mondriaan. I began my coding journey in <strong>2024</strong>, driven by a love for
-        technology and the web.
+        Hi! I'm <span class="text-primary fw-semibold">Mustafa</span>, a passionate Software Development student with a strong interest in building creative, useful, and modern digital experiences. I enjoy turning ideas into websites and applications that are both functional and visually appealing.
       </p>
       <p class="text-light">
-        My goal is to build clean, functional websites using modern tools. Each project is a new chance to grow and
-        push my skills further.
+        My journey in development started with curiosity and has grown into a real passion for problem-solving, design, and continuous learning. I enjoy working with HTML, CSS, JavaScript, PHP and learning how to structure clean, structured code that works well in real life.
       </p>
       <p class="text-light">
-        I’m a hands-on learner who likes to experiment with code, troubleshoot issues, and collaborate with others to solve
-        problems creatively.
+        What motivates me most is the chance to improve every day, challenge myself, and create projects that can help people, whether through a website, a game, or a practical application. I like to combine creativity with logic and keep pushing my skills further.
       </p>
-      <h5 class="text-primary mt-4 mb-2"> My Skills</h5>
+
+      <h5 class="text-primary mt-4 mb-2">My Skills</h5>
       <div class="d-flex flex-wrap gap-2 mb-4">
         <span class="badge bg-primary">HTML</span>
         <span class="badge bg-primary">CSS</span>
         <span class="badge bg-primary">JavaScript</span>
         <span class="badge bg-primary">PHP</span>
+        <span class="badge bg-primary">Bootstrap</span>
+        <span class="badge bg-primary">MySQL</span>
       </div>
-  
-      <p class="text-light">
-        Outside of tech, I enjoy reading, playing video games, and staying active with sports — all of which help me maintain a balanced life.
-      </p>
-      <p class="text-light">
-        I’m excited to keep learning and build awesome projects that make an impact.
-      </p>
-      
+
+      <ul class="facts-list">
+        <li>Student at ROC Mondriaan, Software Development</li>
+        <li>Interested in AI engineering, front-end design, web apps and UI/UX</li>
+        <li>Always learning, experimenting and improving my code</li>
+      </ul>
     </div>
+
     <div class="col-lg-6 text-center mt-4 mt-lg-0">
       <figure class="hover-switch rounded-3 shadow" style="max-width: 400px;">
         <img src="img/Mustafa-education.jpg.jpg" alt="Mustafa" class="img-fluid main-img">
         <img src="img/mustafa-aesthetic.jpg" alt="Alternate" class="img-fluid hover-img">
       </figure>
+
+      <div class="about-grid">
+        <div class="info-card">
+          <span class="label">Favorite footballer</span>
+          <h3>Lionel Messi</h3>
+          <p class="text-light mb-0">His creativity, consistency and leadership inspire me both on and off the field.</p>
+        </div>
+
+        <div class="info-card">
+          <span class="label">Favorite things</span>
+          <h3>Music & Sport</h3>
+          <p class="text-light mb-0">I enjoy combining my passion for football with good music and a strong work ethic.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="favorites" class="container py-5 text-white">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h2 class="text-primary fw-bold mb-4">My Spotify Playlists</h2>
+      <div class="spotify-playlists">
+        <div class="spotify-playlist">
+          <iframe
+            class="spotify-player"
+            src="https://open.spotify.com/embed/playlist/4fhN4pnQlJpRlur8t8DmZt?utm_source=generator"
+            title="Mustafa's Spotify playlist: Random"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+          <a class="btn btn-primary mt-3" href="https://open.spotify.com/playlist/4fhN4pnQlJpRlur8t8DmZt" target="_blank" rel="noopener noreferrer">
+            Open playlist in Spotify
+          </a>
+        </div>
+
+        <div class="spotify-playlist">
+          <iframe
+            class="spotify-player"
+            src="https://open.spotify.com/embed/playlist/3sehV1KbvCoEi99vDha5Z6?utm_source=generator"
+            title="Mustafa's second Spotify playlist"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+          <a class="btn btn-primary mt-3" href="https://open.spotify.com/playlist/3sehV1KbvCoEi99vDha5Z6" target="_blank" rel="noopener noreferrer">
+            Open playlist in Spotify
+          </a>
+        </div>
+
+        <div class="spotify-playlist">
+          <iframe
+            class="spotify-player"
+            src="https://open.spotify.com/embed/playlist/2pdIqVVYEt1fG1iLh3fn85?utm_source=generator"
+            title="Mustafa's third Spotify playlist"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+          <a class="btn btn-primary mt-3" href="https://open.spotify.com/playlist/2pdIqVVYEt1fG1iLh3fn85" target="_blank" rel="noopener noreferrer">
+            Open playlist in Spotify
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
     <!-- Projects -->
-           <section id="projects" class="py-5 bg-black text-white">
+           <section id="projects" class="py-5 text-white">
             <div class="container">
               <h2 class="text-center text-primary fw-bold mb-5">My Projects</h2>
               <div class="row g-4 justify-content-center"> 
@@ -260,7 +291,7 @@
           
 
     <!-- contact section -->
-    <section id="contact" class="py-5 mt-5 bg-black text-white">
+    <section id="contact" class="py-5 mt-5 text-white">
       <div class="container">
         <h2 class="text-center text-primary fw-bold mb-5">Contact Me</h2>
 
@@ -295,21 +326,17 @@
         <!-- Line divider -->
         <hr class="border-primary my-5">
 
-        <!-- Recommended developers -->
-        <div class="text-center text-light mb-3">
-          Recommended developers (click on their name):
-          <a href="https://krishnabihari04.github.io/portfolio.html" target="_blank"
-            class="text-primary text-decoration-none">Krishna Bihari</a>
+        <div class="text-center text-light mb-4">
+          <span class="text-primary fw-semibold">Let’s build something great together.</span>
         </div>
 
-        <!-- Credits -->
         <div class="text-center text-light">
           &copy; 2025 Mustafa Khedoe
         </div>
 
       </div>
     </section>
-  <script src="js/main.js"></script>
+  </div>
 </body>
 
 </html>
