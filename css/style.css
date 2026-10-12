@@ -288,6 +288,15 @@ body {
   color: var(--text-color) !important;
 }
 
+.project-visual {
+  display: grid;
+  aspect-ratio: 16 / 9;
+  place-items: center;
+  background: var(--surface-color);
+  color: var(--primary-color);
+  font-size: 3.5rem;
+}
+
 /* ==== Link Krishna Bihari ==== */
 a.text-primary.text-decoration-none {
   color: var(--primary-color) !important;
