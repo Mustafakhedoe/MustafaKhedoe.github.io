@@ -318,7 +318,7 @@ a.text-primary.text-decoration-none {
 
 #about-me {
   padding-top: 4rem !important;
-  padding-bottom: 5rem !important;
+  padding-bottom: 0 !important;
 }
 
 .about-grid {
@@ -370,6 +370,254 @@ a.text-primary.text-decoration-none {
   .spotify-playlists {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+}
+
+.hobbies-section {
+  padding: 5rem 0 6rem;
+  border-top: 1px solid rgba(52, 211, 153, 0.28);
+  scroll-margin-top: 2rem;
+}
+
+.hobbies-header {
+  max-width: 680px;
+  margin-bottom: 3.5rem;
+}
+
+.hobbies-header h2 {
+  margin-bottom: 1rem;
+}
+
+.hobbies-header > p:last-child,
+.position-highlight p {
+  color: var(--muted-color);
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+.hobby-eyebrow,
+.music-region {
+  color: var(--muted-color);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hobby-eyebrow {
+  margin-bottom: 0.45rem;
+}
+
+.hobby-block + .hobby-block {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.hobby-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.hobby-section-heading h3 {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hobby-section-heading .hobby-eyebrow {
+  margin-bottom: 0.35rem;
+}
+
+.hobby-icon {
+  display: grid;
+  flex: 0 0 3.25rem;
+  width: 3.25rem;
+  aspect-ratio: 1;
+  place-items: center;
+  color: var(--primary-color);
+  background: var(--surface-color);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.music-picks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.music-pick {
+  min-width: 0;
+  padding: 1.5rem;
+  background: rgba(17, 38, 27, 0.75);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 12px;
+}
+
+.music-pick .music-region {
+  margin-bottom: 0.65rem;
+}
+
+.music-pick h4,
+.position-highlight h4,
+.trophies-heading h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.music-pick h4 {
+  margin-bottom: 0.85rem;
+}
+
+.music-pick p:last-child {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.favorite-track {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.favorite-track cite {
+  color: var(--primary-color);
+}
+
+.playlist-heading {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2.75rem 0 0;
+}
+
+.position-highlight {
+  max-width: 760px;
+  margin-bottom: 3.5rem;
+  padding: 1.5rem 1.75rem;
+  background: rgba(17, 38, 27, 0.6);
+  border-left: 3px solid var(--primary-color);
+}
+
+.position-highlight .music-region {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.position-highlight h4 {
+  margin-bottom: 0.65rem;
+}
+
+.trophies-heading {
+  margin-bottom: 1.5rem;
+}
+
+.trophies-heading .music-region {
+  display: block;
+  margin-bottom: 0.45rem;
+}
+
+.trophies-heading h4 {
+  margin-bottom: 0.3rem;
+}
+
+.trophies-heading p {
+  color: var(--muted-color);
+  margin: 0;
+}
+
+.trophy-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 3rem;
+}
+
+.trophy-group {
+  min-width: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(52, 211, 153, 0.35);
+}
+
+.trophy-group h5 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.trophy-group h5 span {
+  color: var(--muted-color);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.trophy-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trophy-list li {
+  display: grid;
+  grid-template-columns: 1.25rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0;
+  color: var(--text-color);
+  border-bottom: 1px solid rgba(236, 253, 245, 0.1);
+  font-size: 0.9rem;
+}
+
+.trophy-list li > i {
+  color: #f2c14e;
+  font-size: 0.85rem;
+}
+
+.trophy-list li strong {
+  color: var(--muted-color);
+  font-size: 0.82rem;
+}
+
+.trophy-sources {
+  margin: 1.75rem 0 0;
+  color: var(--muted-color);
+  font-size: 0.8rem;
+}
+
+.trophy-sources a {
+  color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  .hobbies-section {
+    padding: 3.5rem 0 4rem;
+  }
+
+  .hobbies-header {
+    margin-bottom: 2.75rem;
+  }
+
+  .hobby-block + .hobby-block {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .music-picks,
+  .trophy-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .position-highlight {
+    padding: 1.25rem;
   }
 }
 

@@ -47,6 +47,7 @@
           <ul class="navbar-nav top-nav">
             <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a><span class="nav-dot">•</span></li>
             <li class="nav-item"><a class="nav-link text-white" href="#about-me">About Me</a><span class="nav-dot">•</span></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#hobbies">Hobbies</a><span class="nav-dot">•</span></li>
             <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a><span class="nav-dot">•</span></li>
             <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
           </ul>
@@ -67,6 +68,7 @@
         <ul class="navbar-nav text-center">
           <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#about-me">About Me</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#hobbies">Hobbies</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
         </ul>
@@ -107,7 +109,7 @@
 
 
     <!-- About Me Section -->
-<section id="about-me" class="text-white container py-5" style="min-height:92vh;">
+<section id="about-me" class="text-white container py-5">
   <div class="row align-items-center">
     <div class="col-lg-6">
       <h2 class="text-primary fw-bold mb-3">About Me</h2>
@@ -200,27 +202,41 @@
         <img src="img/mustafa-aesthetic.jpg" alt="Alternate" class="img-fluid hover-img">
       </figure>
 
-      <div class="about-grid">
-        <div class="info-card">
-          <span class="label">Favorite footballer</span>
-          <h3>Lionel Messi</h3>
-          <p class="text-light">I admire his close control, creative passing and ability to find space in a crowded game. He can change a match with a clever pass, a dribble or a finish.</p>
-          <p class="text-light mb-0">His long career at the highest level shows the value of discipline, consistency and focus under pressure. That mindset motivates me to keep learning and improving.</p>
-        </div>
-
-        <div class="info-card">
-          <span class="label">Favorite things</span>
-          <h3>Music & Sport</h3>
-          <p class="text-light">Football is exciting to me because it combines teamwork, skill and competition. I also enjoy listening to music and exploring different styles.</p>
-          <p class="text-light mb-0">My Spotify playlists include American songs, Latin music and other favorites, so I can choose music that fits my mood.</p>
-        </div>
-      </div>
     </div>
   </div>
 
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <h2 class="text-primary fw-bold mb-4 mt-5">My Spotify Playlists</h2>
+<section id="hobbies" class="hobbies-section text-white">
+    <header class="hobbies-header">
+      <p class="hobby-eyebrow">Beyond the screen</p>
+      <h2 class="text-primary fw-bold">Hobbies</h2>
+      <p>I listen to music to relax, recharge and find a song that fits the moment. Football gives me a different kind of energy: reading the game, creating chances and playing as a team.</p>
+    </header>
+
+    <section class="hobby-block" aria-labelledby="music-heading">
+      <div class="hobby-section-heading">
+        <span class="hobby-icon"><i class="bi bi-music-note-beamed" aria-hidden="true"></i></span>
+        <div>
+          <p class="hobby-eyebrow">01 / Music</p>
+          <h3 id="music-heading">Two sounds I come back to</h3>
+        </div>
+      </div>
+
+      <div class="music-picks">
+        <article class="music-pick">
+          <p class="music-region">American music</p>
+          <h4>Shawn Mendes</h4>
+          <p class="favorite-track">All-time favorite: <cite>In My Blood</cite></p>
+          <p class="music-reason">I like how honest and emotional the song feels. Its message about keeping going through difficult moments makes it especially meaningful to me.</p>
+        </article>
+        <article class="music-pick">
+          <p class="music-region">Latin music</p>
+          <h4>Karol G</h4>
+          <p class="favorite-track">All-time favorite: <cite>Tusa</cite> with Nicki Minaj</p>
+          <p class="music-reason">The upbeat reggaeton sound makes it fun to listen to, while the song's story about moving on gives it a memorable contrast.</p>
+        </article>
+      </div>
+
+      <h4 class="playlist-heading">My Spotify playlists</h4>
       <div class="spotify-playlists">
         <div class="spotify-playlist">
           <iframe
@@ -261,8 +277,74 @@
           </a>
         </div>
       </div>
-    </div>
-  </div>
+
+    </section>
+    <section class="hobby-block football-hobby" aria-labelledby="football-heading">
+      <div class="hobby-section-heading">
+        <span class="hobby-icon"><i class="bi bi-dribbble" aria-hidden="true"></i></span>
+        <div>
+          <p class="hobby-eyebrow">02 / Football</p>
+          <h3 id="football-heading">On the pitch</h3>
+        </div>
+      </div>
+
+      <div class="position-highlight">
+        <span class="music-region">My position</span>
+        <h4>Attacking midfielder</h4>
+        <p>I enjoy playing between midfield and attack, finding space, creating chances and helping the forwards. It lets me contribute to the build-up and stay involved near goal.</p>
+      </div>
+
+      <div class="trophies-heading">
+        <span class="music-region">My favorite footballer</span>
+        <h4>Lionel Messi</h4>
+        <p>Career team trophies</p>
+      </div>
+      <div class="trophy-groups">
+        <section class="trophy-group" aria-label="Lionel Messi trophies with Barcelona">
+          <h5>FC Barcelona <span>35 titles</span></h5>
+          <ul class="trophy-list">
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>La Liga</span><strong>10</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Spanish Super Cup</span><strong>8</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Copa del Rey</span><strong>7</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>UEFA Champions League</span><strong>4</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>UEFA Super Cup</span><strong>3</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>FIFA Club World Cup</span><strong>3</strong></li>
+          </ul>
+        </section>
+
+        <section class="trophy-group" aria-label="Lionel Messi trophies with Argentina">
+          <h5>Argentina <span>6 titles</span></h5>
+          <ul class="trophy-list">
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>FIFA World Cup</span><strong>1</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Copa América</span><strong>2</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Finalissima</span><strong>1</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Olympic gold medal</span><strong>1</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>FIFA U-20 World Cup</span><strong>1</strong></li>
+          </ul>
+        </section>
+
+        <section class="trophy-group" aria-label="Lionel Messi trophies with Paris Saint-Germain">
+          <h5>Paris Saint-Germain <span>3 titles</span></h5>
+          <ul class="trophy-list">
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Ligue 1</span><strong>2</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Trophée des Champions</span><strong>1</strong></li>
+          </ul>
+        </section>
+
+        <section class="trophy-group" aria-label="Lionel Messi trophies with Inter Miami">
+          <h5>Inter Miami <span>4 titles</span></h5>
+          <ul class="trophy-list">
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Leagues Cup</span><strong>1</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Supporters' Shield</span><strong>1</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>MLS Cup</span><strong>1</strong></li>
+            <li><i class="bi bi-trophy-fill" aria-hidden="true"></i><span>Campeones Cup</span><strong>1</strong></li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="trophy-sources">Sources: <a href="https://www.fcbarcelona.com/en/news/2105010/messi-wins-35th-trophy-with-barca" target="_blank" rel="noopener noreferrer">FC Barcelona</a>, <a href="https://www.fifa.com/en/the-best-fifa-football-awards/articles/the-world-cup-the-best-and-all-of-lionel-messi-trophy-wins" target="_blank" rel="noopener noreferrer">FIFA</a> and <a href="https://www.mlssoccer.com/news/champions-inter-miami-win-2026-campeones-cup-over-cruz-azul" target="_blank" rel="noopener noreferrer">MLS</a>.</p>
+    </section>
+</section>
 </section>
 
     <!-- Projects -->
@@ -274,7 +356,9 @@
                 <!-- Projectkaart 1 Higher Lower-->
                  <div class="col-md-6 col-lg-4">
                   <div class="card h-100 bg-black border border-primary shadow-sm">
-                    <img src="img/hoger-lager.jpg" class="card-img-top" alt="Higher Lower">
+                    <div class="project-visual" role="img" aria-label="Higher Lower project visual">
+                      <i class="bi bi-arrow-down-up" aria-hidden="true"></i>
+                    </div>
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title text-primary text-center">Higher Lower</h5>
                       <p class="card-text text-light text-center">
@@ -293,7 +377,9 @@
                 <!-- Projectkaart 2 Connect 4 -->
                  <div class="col-md-6 col-lg-4">
                   <div class="card h-100 bg-black border border-primary shadow-sm">
-                    <img src="img/connect-4.jpg" class="card-img-top" alt="Connect 4">
+                    <div class="project-visual" role="img" aria-label="Connect 4 project visual">
+                      <i class="bi bi-circle-half" aria-hidden="true"></i>
+                    </div>
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title text-primary text-center">Connect 4</h5>
                       <p class="card-text text-light text-center">
@@ -310,7 +396,9 @@
                 <!-- Projectkaart 3 Tic Tac Toe -->
                  <div class="col-md-6 col-lg-4">
                   <div class="card h-100 bg-black border border-primary shadow-sm">
-                    <img src="img/tic-tac-toe.jpg" class="card-img-top" alt="Tic Tac Toe">
+                    <div class="project-visual" role="img" aria-label="Tic Tac Toe project visual">
+                      <i class="bi bi-grid-3x3" aria-hidden="true"></i>
+                    </div>
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-title text-primary text-center">Tic Tac Toe</h5>
                       <p class="card-text text-light text-center">
@@ -327,7 +415,9 @@
                 <!-- Projectkaart 4 Review Your experience-->
 <div class="col-md-6 col-lg-4">
   <div class="card h-100 bg-black border border-primary shadow-sm">
-    <img src="img/Akatsuki.jpg" class="card-img-top" alt="Higher Lower">
+    <div class="project-visual" role="img" aria-label="Review Your Experience project visual">
+      <i class="bi bi-chat-square-heart-fill" aria-hidden="true"></i>
+    </div>
     <div class="card-body d-flex flex-column">
       <h5 class="card-title text-primary text-center">Review Your experience</h5>
       <p class="card-text text-light text-center">
