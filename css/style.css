@@ -532,6 +532,39 @@ a.text-primary.text-decoration-none {
   margin: 0;
 }
 
+.ballon-dor-highlight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 760px;
+  margin-bottom: 1.75rem;
+  padding: 1rem 1.25rem;
+  background: rgba(242, 193, 78, 0.08);
+  border: 1px solid rgba(242, 193, 78, 0.42);
+  border-radius: 10px;
+}
+
+.ballon-dor-highlight > i {
+  flex: 0 0 auto;
+  color: #f2c14e;
+  font-size: 1.35rem;
+}
+
+.ballon-dor-highlight div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.ballon-dor-highlight strong {
+  color: var(--text-color);
+}
+
+.ballon-dor-highlight span {
+  color: var(--muted-color);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 .trophy-groups {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
